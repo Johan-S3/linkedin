@@ -1,0 +1,14 @@
+:root{
+  --colorFondo: #f4f2ee;
+  --colorPrincipal: #fff;
+  --colorFormulario: #edf3f8;
+  --colorFuentePrincipal: #5f5f5f;
+  --colorFuenteSecundaria: #777;
+  --colorFuenteTerciaria: #2874b1;
+  --colorSombreHeader: rgba(0, 0, 0, 0.1);
+  --colorOnline: #41db51;
+  --colorBlack: #222;
+
+  --alingY: center;
+  --justifyX: center;
+}

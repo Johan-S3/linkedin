@@ -1,0 +1,119 @@
+.header{
+  width: 100vw;
+  height: 52px;
+  background-color: var(--colorPrincipal);
+  display: flex;
+  box-shadow: 0 5px 10px var(--colorSombreHeader);
+  position: fixed;
+  z-index: 100;
+}
+
+/* HEADER */
+.header__container{
+  height: 100%;
+  display: flex;
+  align-items: var(--alingY);
+  justify-content: space-between;
+}
+
+/* Contenedor de busquedas */
+.search-container{
+  height: 36px;
+  display: flex;
+  align-items: var(--alingY);
+  flex: 0 1 380px;
+  gap: 15px;
+}
+.search-container__logo{
+  height: 35px;
+  display: block;
+}
+.search-container__form{
+  height: 100%;
+  width: 100%;
+  background-color: var(--colorFormulario);
+  display: flex;
+  align-items: var(--alingY);
+  border-radius: 10px;
+  padding-left: 15px;
+}
+.search-container__icono{
+  font-size: 1.2rem;
+}
+.search-container__input{
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  padding: 8px;
+}
+
+/* Contenedor de navegacion */
+.nav-container{
+  height: 100%;
+  display: flex;
+  align-items: var(--alingY);
+  gap: 20px;
+}
+.nav-container__list{
+  display: flex;
+  list-style: none;
+  align-items: var(--alingY);
+  height: 100%;
+}
+.nav-container__link{
+  min-width: 85px;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: var(--alingY);
+  justify-content: var(--justifyX);
+  text-decoration: none;
+  color: var(--colorFuentePrincipal);
+  gap: 2px;
+  position: relative;
+  transition: 1s;
+}
+
+.nav-container__icon{
+  font-size: 1.5rem;
+}
+.nav-container__text{
+  font-size: 0.8rem;
+}
+.nav-container__profile{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.nav-container__photo{
+  width: 30px;
+  border-radius: 50%;
+}
+.nav-container__profile::after{
+  content: " ";
+  border: 2px solid var(--colorPrincipal);
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  background-color: var(--colorOnline);
+  position: absolute;
+}
+
+/* Hover items del container de navegacion */
+.nav-container__link::after{
+  content: " ";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  transition: width 0.3s;
+  background-color: var(--colorBlack);
+}
+.nav-container__link:hover::after, .nav-container__link:hover{
+  color: var(--colorBlack);
+  width: 100%;
+}
