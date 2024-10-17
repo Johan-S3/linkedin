@@ -31,8 +31,8 @@
   padding-top: calc(52px + 20px);
 }
 .sidebar, main, .aside{
-  /* background-color: var(--colorFondo); */
-  background-color: var(--colorPrincipal);
+  background-color: var(--colorFondo);
+  /* background-color: var(--colorPrincipal); */
 }
 
 .sidebar{

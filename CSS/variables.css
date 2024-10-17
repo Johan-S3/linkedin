@@ -5,9 +5,12 @@
   --colorFuentePrincipal: #5f5f5f;
   --colorFuenteSecundaria: #777;
   --colorFuenteTerciaria: #2874b1;
+  --colorFuenteCuaternaria: #888;
   --colorSombreHeader: rgba(0, 0, 0, 0.1);
+  --colorItemHover: #edf3f8;
   --colorOnline: #41db51;
   --colorBlack: #222;
+  --colorBorde: #ccc;
 
   --alingY: center;
   --justifyX: center;
