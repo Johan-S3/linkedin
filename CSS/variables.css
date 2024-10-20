@@ -11,6 +11,9 @@
   --colorOnline: #41db51;
   --colorBlack: #222;
   --colorBorde: #ccc;
+  --colorLike: rgb(0, 0, 199);
+  --colorLove: rgb(201, 0, 0);
+  --colorSmile: rgb(199, 199, 0);
 
   --alingY: center;
   --justifyX: center;
