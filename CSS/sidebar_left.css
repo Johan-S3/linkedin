@@ -11,18 +11,17 @@
   width: 100%;
 }
 .box-profile__foto{
-  position: absolute;
   display: block;
+  position: relative;
   width: 90px;
   border-radius: 50%;
   background-color: var(--colorPrincipal);
-  padding: 4px;
-  top: 45px;
-  left: 25px;
+  border: 4px solid var(--colorPrincipal);
 }
 .box-profile__information{
   margin-top: 48px;
   padding: 0 25px;
+  margin-top: -45px;
 }
 .profile-information__title{
   color: var(--colorBlack);

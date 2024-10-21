@@ -3,6 +3,7 @@
 @import url(header.css);
 @import url(sidebar_left.css);
 @import url(main.css);
+@import url(sidebar_right.css);
 *{
   margin: 0;
   padding: 0;
@@ -32,16 +33,60 @@
 }
 .sidebar, main, .aside{
   background-color: var(--colorFondo);
-  /* background-color: var(--colorPrincipal); */
 }
 
 .sidebar{
   grid-area: sidebar;
 }
 .main{
-  min-width: 590px;
   grid-area: main;
 }
 .aside{
   grid-area: aside;
+}
+
+@media (width < 1100px){
+  .content-layout{
+    grid-template-columns: 260px 1fr;
+    grid-template-areas:
+      'sidebar main';
+    gap: 1rem;
+    height: 100vh;
+    padding-top: calc(52px + 20px);
+  }
+  .aside{
+    display: none;
+  }
+}
+
+@media (width < 770px){
+  .search-container__form{
+    background-color: transparent;
+    color: var(--colorFuenteTerciaria);
+  }
+  .search-container__input{
+    width: 0;
+    padding: 0;
+  }
+  .nav-container__link{
+    min-width: 45px;
+  }
+  .nav-container__text{
+    display: none;
+  }
+
+  .content-layout{
+    margin-right: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'sidebar'
+      'main';
+    gap: 1rem;
+    height: 100vh;
+    padding-top: calc(52px + 20px);
+  }
+
+  .box-activity__enlace{
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,112 @@
+.box-news{
+  background-color: var(--colorPrincipal);
+  padding: 10px 25px;
+}
+.box-news__box-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: var(--alingY);
+  color: var(--colorBlack);
+  margin: 10px 0 30px;
+}
+.box-news__title, .box-news__icon{
+  font-size: 18px;
+  font-weight: 600;
+}
+.box-news__box-title .box-news__icon{
+  color: var(--colorFuenteTerciaria);
+  font-weight: 500;
+}
+.box-news__link, .box-news__text{
+  font-size: 12px;
+}
+.box-news__link{
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: -5px;
+  margin-top: 10px;
+  color: var(--colorFuentePrincipal);
+}
+.box-news__link--azul{
+  color: var(--colorFuenteTerciaria);
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+.box-sticky{
+  position: sticky;
+  top: 62px;
+}
+.sticky-information{
+  background-color: var(--colorPrincipal);
+  margin-top: 12px;
+  padding: 15px 25px;
+  font-size: 12px;
+  text-align: center;
+}
+.sticky-information__word{
+  display: flex;
+  justify-content: end;
+  font-weight: 500;
+}
+.sticky-information__text{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.sticky-information__imagenes{
+  display: flex;
+  align-items: var(--alingY);
+  justify-content: var(--justifyX);
+  gap: 10px;
+}
+.sticky-information__image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.sticky-information__text--important{
+  font-weight: 500;
+}
+.sticky-information__link{
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid var(--colorFuenteTerciaria);
+  color: var(--colorFuenteTerciaria);
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-weight: 500;
+  margin: 10px auto 10px;
+  transition: 0.2s;
+}
+.sticky-information__link:hover{
+  background-color: var(--colorFuenteTerciaria);
+  color: var(--colorPrincipal);
+  border-color: var(--colorFuenteTerciaria);
+}
+.sticky-links{
+  margin-top: 12px;
+  font-size: 14px;
+  padding: 15px 25px;
+  text-align: center;
+}
+.sticky-links__link{
+  display: inline-block;
+  margin: 4px 2px;
+  text-decoration: none;
+  color: var(--colorFuentePrincipal);
+}
+.sticky-copyright{
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  align-items: var(--alingY);
+  justify-content: var(--justifyX);
+}
+.sticky-copyright__image{
+  width: 18px;
+  height: 18px;
+}

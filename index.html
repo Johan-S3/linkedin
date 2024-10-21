@@ -10,6 +10,7 @@
 </head>
 
 <body class="body">
+  <!-- HEADER -->
   <header class="header">
     <div class="header__container container">
       <div class="header__search-container search-container">
@@ -50,17 +51,45 @@
           </li>
         </ul>
         <div class="nav-container__profile">
-          <img class="nav-container__photo" src="imagenes/foto.jpg" alt="Foto">
+          <label for="desplegable">
+            <img class="nav-container__photo" src="imagenes/foto.jpg" alt="Foto">
+          </label>
         </div>
       </div>
     </div>
   </header>
+
+  <input type="checkbox" id="desplegable" name="desplegable" class="desplegable">
+
+  <div class="menu-container">
+    <div class="menu-container__info">
+      <img class="menu-container__image" src="imagenes/foto.jpg" alt="Foto">
+      <div class="menu-container__nombre">
+        <h3 class="menu-container__text">Steven Castro</h3>
+        <a class="menu-container__enlace" href="profile.html">See your profile</a>
+      </div>
+    </div>
+    <hr class="menu-container__separador">
+    <a class="menu-container__link menu-link" href="#">
+      <div class="menu-link__icon-cont">
+        <i class='bx bxs-message-error'></i>
+      </div>
+      <div>
+        <span>Give Feedback</span>
+        <i class='bx bxs-chevron-right'></i>
+      </div>
+    </a>
+
+  </div>
+
   <div class="content-layout container">
+
+    <!-- SIDEBAR LEFT -->
     <aside class="sidebar">
       <div class="sidebar__box box-profile">
         <img class="box-profile__portada" src="imagenes/imagenPortada.jpg" alt="Portada">
-        <img class="box-profile__foto" src="imagenes/foto.jpg" alt="Foto">
         <div class="box-profile__information profile-information">
+          <img class="box-profile__foto" src="imagenes/foto.jpg" alt="Foto">
           <h1 class="profile-information__title">Steven Castro</h1>
           <h3 class="profile-information__subtitle">Web Developer</h3>
           <ul class="profile-information__list">
@@ -72,8 +101,10 @@
           </ul>
         </div>
         <div class="box-profile__links profile-links">
-          <a class="profile-links__enlace profile-links__enlace--bordeDerecho" href=""><img class="profile-links__images" src="imagenes/items.png" alt="items">My items</a>
-          <a class="profile-links__enlace" href=""><img class="profile-links__images" src="imagenes/premium.png" alt="premium">Try premium</a>
+          <a class="profile-links__enlace profile-links__enlace--bordeDerecho" href=""><img
+              class="profile-links__images" src="imagenes/items.png" alt="items">My items</a>
+          <a class="profile-links__enlace" href=""><img class="profile-links__images" src="imagenes/premium.png"
+              alt="premium">Try premium</a>
         </div>
       </div>
       <div class="sidebar__box box-information">
@@ -85,18 +116,23 @@
         <a class="box-information__item" href="#"><i class='bx bx-time box-information__icon'></i>Code Better</a>
         <a class="box-information__item" href="#"><i class='bx bx-time box-information__icon'></i>Group Learning</a>
         <h3 class="box-information__title">Groups</h3>
-        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon' ></i>Web Desing Groups</a>
-        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon' ></i>HTML & CSS Learners</a>
-        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon' ></i>Python & JavaScript Group</a>
-        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon' ></i>Learn Coding Online</a>
+        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon'></i>Web Desing
+          Groups</a>
+        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon'></i>HTML & CSS
+          Learners</a>
+        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon'></i>Python &
+          JavaScript Group</a>
+        <a class="box-information__item" href=""><i class='bx bx-male-female box-information__icon'></i>Learn Coding
+          Online</a>
         <h3 class="box-information__title">HASHTAG</h3>
-        <a class="box-information__item" href=""><i class='bx bx-hash box-information__icon' ></i>webdevelopment</a>
-        <a class="box-information__item" href=""><i class='bx bx-hash box-information__icon' ></i>userinterface</a>
-        <a class="box-information__item" href=""><i class='bx bx-hash box-information__icon' ></i>onlinelearning</a>
+        <a class="box-information__item" href=""><i class='bx bx-hash box-information__icon'></i>webdevelopment</a>
+        <a class="box-information__item" href=""><i class='bx bx-hash box-information__icon'></i>userinterface</a>
+        <a class="box-information__item" href=""><i class='bx bx-hash box-information__icon'></i>onlinelearning</a>
         <hr class="box-information__separador">
         <div class="box-information__more">Discover more</div>
-        </div>
+      </div>
     </aside>
+    <!-- MAIN -->
     <main class="main">
       <div class="main__create-post box-create">
         <div class="box-create__input">
@@ -129,7 +165,7 @@
       </div>
 
       <div class="main__short-by box-shortBy">
-        <hr class="box-shortBy__linea" >
+        <hr class="box-shortBy__linea">
         <p class="box-shortBy__texto">
           Short by:
           <span class="box-shortBy__important">
@@ -149,8 +185,10 @@
           </div>
         </div>
         <p class="box-post__texto">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi error quod voluptate sit optio eveniet id vitae unde ipsam, rem soluta
-          reprehenderit sunt temporibus eaque cumque at tempore accusantium magnam eius suscipit illo esse autem eum. Odit veniam, rem nam maiores maxime,
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi error quod voluptate sit optio
+          eveniet id vitae unde ipsam, rem soluta
+          reprehenderit sunt temporibus eaque cumque at tempore accusantium magnam eius suscipit illo esse autem eum.
+          Odit veniam, rem nam maiores maxime,
           quisquam voluptate impedit, in unde quos iure.
         </p>
         <img class="box-post__imagen" src="imagenes/imagen_post1.png" alt="Imagen">
@@ -170,7 +208,7 @@
         <ul class="main__activity box-activity">
           <li class="box-activity__boton-link">
             <a class="box-activity__enlace" href="#">
-              <i class='box-activity__icon bx bx-like' ></i>
+              <i class='box-activity__icon bx bx-like'></i>
               <span>Recomendar</span>
             </a>
           </li>
@@ -188,7 +226,7 @@
           </li>
           <li class="box-activity__boton-link">
             <a class="box-activity__enlace" href="#">
-              <i class='box-activity__icon bx bx-send' ></i>
+              <i class='box-activity__icon bx bx-send'></i>
               <span>Enviar</span>
             </a>
           </li>
@@ -205,8 +243,10 @@
           </div>
         </div>
         <p class="box-post__texto">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi error quod voluptate sit optio eveniet id vitae unde ipsam, rem soluta
-          reprehenderit sunt temporibus eaque cumque at tempore accusantium magnam eius suscipit illo esse autem eum. Odit veniam, rem nam maiores maxime,
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi error quod voluptate sit optio
+          eveniet id vitae unde ipsam, rem soluta
+          reprehenderit sunt temporibus eaque cumque at tempore accusantium magnam eius suscipit illo esse autem eum.
+          Odit veniam, rem nam maiores maxime,
           quisquam voluptate impedit, in unde quos iure.
         </p>
         <img class="box-post__imagen" src="imagenes/imagen_post2.png" alt="Imagen">
@@ -226,7 +266,7 @@
         <ul class="main__activity box-activity">
           <li class="box-activity__boton-link">
             <a class="box-activity__enlace" href="#">
-              <i class='box-activity__icon bx bx-like' ></i>
+              <i class='box-activity__icon bx bx-like'></i>
               <span>Recomendar</span>
             </a>
           </li>
@@ -244,7 +284,7 @@
           </li>
           <li class="box-activity__boton-link">
             <a class="box-activity__enlace" href="#">
-              <i class='box-activity__icon bx bx-send' ></i>
+              <i class='box-activity__icon bx bx-send'></i>
               <span>Enviar</span>
             </a>
           </li>
@@ -261,8 +301,10 @@
           </div>
         </div>
         <p class="box-post__texto">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi error quod voluptate sit optio eveniet id vitae unde ipsam, rem soluta
-          reprehenderit sunt temporibus eaque cumque at tempore accusantium magnam eius suscipit illo esse autem eum. Odit veniam, rem nam maiores maxime,
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi error quod voluptate sit optio
+          eveniet id vitae unde ipsam, rem soluta
+          reprehenderit sunt temporibus eaque cumque at tempore accusantium magnam eius suscipit illo esse autem eum.
+          Odit veniam, rem nam maiores maxime,
           quisquam voluptate impedit, in unde quos iure.
         </p>
         <img class="box-post__imagen" src="imagenes/imagen_post3.png" alt="Imagen">
@@ -282,7 +324,7 @@
         <ul class="main__activity box-activity">
           <li class="box-activity__boton-link">
             <a class="box-activity__enlace" href="#">
-              <i class='box-activity__icon bx bx-like' ></i>
+              <i class='box-activity__icon bx bx-like'></i>
               <span>Recomendar</span>
             </a>
           </li>
@@ -300,15 +342,64 @@
           </li>
           <li class="box-activity__boton-link">
             <a class="box-activity__enlace" href="#">
-              <i class='box-activity__icon bx bx-send' ></i>
+              <i class='box-activity__icon bx bx-send'></i>
               <span>Enviar</span>
             </a>
           </li>
         </ul>
       </div>
-      
+
     </main>
-    <aside class="aside"></aside>
+    <!-- SIDEBAR RIGHT -->
+    <aside class="aside">
+      <div class="aside__news box-news">
+        <div class="box-news__box-title">
+          <h3 class="box-news__title">Trending News</h3>
+          <i class='box-news__icon bx bx-info-circle bx-flip-vertical'></i>
+        </div>
+        <a class="box-news__link" href="#">High demand for skilled manpower</a>
+        <span class="box-news__text">1d ago · 10,934 readers</span>
+
+        <a class="box-news__link" href="#">Careers growing horizontally too</a>
+        <span class="box-news__text">1d ago · 10,532 readers</span>
+
+        <a class="box-news__link" href="#">Lees work visa for US, more for UK</a>
+        <span class="box-news__text">1d ago · 10,451 readers</span>
+
+        <a class="box-news__link" href="#">More hiring = higrher confidence?</a>
+        <span class="box-news__text">1d ago · 10,122 readers</span>
+
+        <a class="box-news__link" href="#">Gautam Adani is the word´s third richest</a>
+        <span class="box-news__text">1d ago · 10,011 readers</span>
+
+        <a href="#" class="box-news__link box-news__link--azul">Read more</a>
+      </div>
+      <div class="aside__sticky box-sticky">
+        <div class="box-sticky__information sticky-information">
+          <small class="sticky-information__word">Ad . . .</small>
+          <span class="sticky-information__text">Master teh 5 principles of web desing</span>
+          <div class="sticky-information__imagenes">
+            <img class="sticky-information__image" src="imagenes/foto.jpg" alt="Foto">
+            <img class="sticky-information__image" src="imagenes/mi-logo.png" alt="mi-logo">
+          </div>
+          <b class="sticky-information__text sticky-information__text--important">Brand and Demand in Xiaomi</b>
+          <a href="#" class="sticky-information__link">Learn more</a>
+        </div>
+        <div class="box-sticky__links sticky-links">
+          <a href="#" class="sticky-links__link">About</a>
+          <a href="#" class="sticky-links__link">Accessiblity</a>
+          <a href="#" class="sticky-links__link">Help Center</a>
+          <a href="#" class="sticky-links__link">Privacy Policy</a>
+          <a href="#" class="sticky-links__link">Advertising</a>
+          <a href="#" class="sticky-links__link">Get the App</a>
+          <a href="#" class="sticky-links__link">More</a>
+          <div class="box-sticky__copyright sticky-copyright">
+            <img class="sticky-copyright__image" src="imagenes/logo.jpg" alt="Logo">
+            <span class="sticky-copyright__text">Linkedup © 2022. All right reserved</span>
+          </div>
+        </div>
+      </div>
+    </aside>
   </div>
 </body>
 
