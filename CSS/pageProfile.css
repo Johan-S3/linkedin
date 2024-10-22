@@ -1,0 +1,14 @@
+.content-layout-profile {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 280px;
+    grid-template-areas:
+      'main aside'
+      'footer footer';
+    gap: 1rem;
+    height: 120vh;
+}
+
+.main, .aside{
+    padding-top: calc(52px + 20px);
+}
