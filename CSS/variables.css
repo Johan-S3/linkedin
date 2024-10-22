@@ -14,6 +14,7 @@
   --colorLike: rgb(0, 0, 199);
   --colorLove: rgb(201, 0, 0);
   --colorSmile: rgb(199, 199, 0);
+  --colorDropdown: hsla(0, 0%, 13%, 0.980);
 
   --alingY: center;
   --justifyX: center;
