@@ -1,6 +1,7 @@
 .box-news{
   background-color: var(--colorPrincipal);
   padding: 10px 25px;
+  margin-bottom: 12px;
 }
 .box-news__box-title{
   display: flex;
@@ -85,19 +86,19 @@
   color: var(--colorPrincipal);
   border-color: var(--colorFuenteTerciaria);
 }
-.sticky-links{
+.sticky-links, .box-links{
   margin-top: 12px;
   font-size: 14px;
   padding: 15px 25px;
   text-align: center;
 }
-.sticky-links__link{
+.sticky-links__link, .box-links__link{
   display: inline-block;
   margin: 4px 2px;
   text-decoration: none;
   color: var(--colorFuentePrincipal);
 }
-.sticky-copyright{
+.sticky-copyright, .box-copyright{
   display: flex;
   gap: 4px;
   font-size: 12px;
@@ -106,7 +107,7 @@
   align-items: var(--alingY);
   justify-content: var(--justifyX);
 }
-.sticky-copyright__image{
+.sticky-copyright__image, .box-copyright__image{
   width: 18px;
   height: 18px;
 }
