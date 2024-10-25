@@ -200,7 +200,7 @@
   font-size: 20px;
 }
 
-.box-skills__link, .box-language__link{
+.box-skills__link, .box-language__link, .box-people__link{
   text-decoration: none;
   display: inline-block;
   margin: 10px 5px;
@@ -212,7 +212,7 @@
   font-weight: 500;
   transition: 0.4s;
 }
-.box-skills__link:hover{
+.box-skills__link:hover, .box-people__link:hover{
   background-color: var(--colorFuenteSecundaria);
   color: var(--colorPrincipal);
 }
@@ -227,7 +227,42 @@
 .box-language__link:hover{
   border: 1px solid var(--colorFuentePrincipal);
 }
+
 /* ESTILOS AL ASIDE DE PAGE-PROFILE */
 .sticky-information{
   margin-top: 0;
+}
+.box-people{
+  margin-top: 12px;
+  width: 100%;
+  background-color: var(--colorPrincipal);
+  padding: 15px 25px;
+}
+.box-people__title{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+.box-people__content_person{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 6px;
+  gap: 8px;
+  font-size: 12px;
+}
+.box-people__image{
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.box-people__name{
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+.box-people__text{
+  display: block;
+}
+.box-people__link{
+  padding: 5px 25px;
 }
